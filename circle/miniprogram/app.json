@@ -1,26 +1,45 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib",
-    "pages/openapi/openapi",
-    "pages/openapi/serverapi/serverapi",
-    "pages/openapi/callback/callback",
-    "pages/openapi/cloudid/cloudid",
-    "pages/im/im",
-    "pages/im/room/room"
+    "pages/home/index",
+    "pages/circle/index",
+    "pages/user/index"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "IT导员",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "tabBar": {
+    "selectedColor":"#FFA500",
+    "list": [
+      {
+      "pagePath": "pages/home/index",
+      "text": "首页",
+      "iconPath":"./images/首页.png",
+      "selectedIconPath":"./images/首页1.png"
+    }, 
+    {
+      "pagePath": "pages/circle/index",
+      "text": "圈子",
+      "iconPath":"./images/圈子.png",
+      "selectedIconPath":"./images/圈子1.png"
+    },
+    {
+      "pagePath": "pages/user/index",
+      "text": "我的",
+      "iconPath":"./images/我的.png",
+      "selectedIconPath":"./images/我的1.png"
+    }
+  ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ]
 }
